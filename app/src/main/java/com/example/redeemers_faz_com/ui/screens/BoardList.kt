@@ -32,6 +32,7 @@ import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.unit.dp
 import com.example.redeemers_faz_com.room.AppDatabase
 import com.example.redeemers_faz_com.room.Board
+import com.example.redeemers_faz_com.util.SharedBoard
 
 
 @OptIn(ExperimentalComposeUiApi::class, ExperimentalMaterialApi::class)
@@ -113,17 +114,19 @@ fun BoardList(navigateToBoard: (Int) -> Unit, database: AppDatabase) {
                 // Each board is displayed in a Card
                 Card(
 //                    onClick = { board.name?.let { navigateToBoard(it) } },
-                    onClick = { navigateToBoard(board.id) },
+
+                    onClick = {
+                        navigateToBoard(board.id)
+                        SharedBoard.id=board.id;
+                              },
                     modifier = Modifier
                         .padding(12.dp)
                         .fillMaxWidth()
                         .padding(0.dp)
-
                 ) {
                     // Text displaying the name of the board
                     Text(
-                        modifier = Modifier.padding(12.dp)
-                            ,
+                        modifier = Modifier.padding(12.dp),
 
                         text = board.name ?: "",
                         color = Color.Black

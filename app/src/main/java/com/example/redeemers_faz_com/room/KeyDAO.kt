@@ -25,4 +25,9 @@ interface KeysDAO {
     // Function to retrieve keys by board ID from the database as a Flow
     @Query("SELECT * FROM `key` WHERE id_board = :idBoard")
     fun getKeysByBoard(idBoard: Int): Flow<List<Key>>
+
+
+
+
+
 }
