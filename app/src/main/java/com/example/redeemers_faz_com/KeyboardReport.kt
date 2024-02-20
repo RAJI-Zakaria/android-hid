@@ -1,4 +1,4 @@
-package com.example.bluetoothsample
+package com.example.redeemers_faz_com
 
 import android.view.KeyEvent
 
@@ -20,12 +20,8 @@ value class KeyboardReport(
 
     companion object {
         const val ID = 8
-
-        // see https://developer.apple.com/library/archive/technotes/tn2450/_index.html
-        // see also https://gist.github.com/MightyPork/6da26e382a7ad91b5496ee55fdc73db2
-        // see also https://learn.microsoft.com/fr-fr/windows-hardware/drivers/hid/
         val KeyEventMap = mapOf(
-            KeyEvent.KEYCODE_A to 4,
+            KeyEvent.KEYCODE_A to 20,
             KeyEvent.KEYCODE_B to 5,
             KeyEvent.KEYCODE_C to 6,
             KeyEvent.KEYCODE_D to 7,
@@ -37,20 +33,20 @@ value class KeyboardReport(
             KeyEvent.KEYCODE_J to 13,
             KeyEvent.KEYCODE_K to 14,
             KeyEvent.KEYCODE_L to 15,
-            KeyEvent.KEYCODE_M to 16,
+            KeyEvent.KEYCODE_M to 51,
             KeyEvent.KEYCODE_N to 17,
             KeyEvent.KEYCODE_O to 18,
             KeyEvent.KEYCODE_P to 19,
-            KeyEvent.KEYCODE_Q to 20,
+            KeyEvent.KEYCODE_Q to 4,
             KeyEvent.KEYCODE_R to 21,
             KeyEvent.KEYCODE_S to 22,
             KeyEvent.KEYCODE_T to 23,
             KeyEvent.KEYCODE_U to 24,
             KeyEvent.KEYCODE_V to 25,
-            KeyEvent.KEYCODE_W to 26,
+            KeyEvent.KEYCODE_Z to 26,
             KeyEvent.KEYCODE_X to 27,
             KeyEvent.KEYCODE_Y to 28,
-            KeyEvent.KEYCODE_Z to 29,
+            KeyEvent.KEYCODE_W to 29,
 
 
             KeyEvent.KEYCODE_1 to 30,
@@ -63,6 +59,8 @@ value class KeyboardReport(
             KeyEvent.KEYCODE_8 to 37,
             KeyEvent.KEYCODE_9 to 38,
             KeyEvent.KEYCODE_0 to 39,
+
+            KeyEvent.KEYCODE_SPACE to 44,
 
             KeyEvent.KEYCODE_F1 to 58,
             KeyEvent.KEYCODE_F2 to 59,
@@ -77,40 +75,13 @@ value class KeyboardReport(
             KeyEvent.KEYCODE_F11 to 68,
             KeyEvent.KEYCODE_F12 to 69,
 
-            KeyEvent.KEYCODE_ENTER to 40,
-            KeyEvent.KEYCODE_ESCAPE to 41,
-            KeyEvent.KEYCODE_DEL to 42,
-            KeyEvent.KEYCODE_TAB to 43,
-            KeyEvent.KEYCODE_SPACE to 44,
-            KeyEvent.KEYCODE_MINUS to 45,
-            KeyEvent.KEYCODE_EQUALS to 46,
-            KeyEvent.KEYCODE_LEFT_BRACKET to 47,
-            KeyEvent.KEYCODE_RIGHT_BRACKET to 48,
-            KeyEvent.KEYCODE_BACKSLASH to 49,
-            KeyEvent.KEYCODE_POUND to 50,
-            KeyEvent.KEYCODE_SEMICOLON to 51,
-            KeyEvent.KEYCODE_APOSTROPHE to 52,
-            KeyEvent.KEYCODE_GRAVE to 53,
-            KeyEvent.KEYCODE_COMMA to 54,
-            KeyEvent.KEYCODE_PERIOD to 55,
-            KeyEvent.KEYCODE_SLASH to 56,
-
-            KeyEvent.KEYCODE_SCROLL_LOCK to 71,
-            KeyEvent.KEYCODE_INSERT to 73,
-            KeyEvent.KEYCODE_HOME to 74,
-            KeyEvent.KEYCODE_PAGE_UP to 75,
-            KeyEvent.KEYCODE_FORWARD_DEL to 76,
-            KeyEvent.KEYCODE_MOVE_END to 77,
-            KeyEvent.KEYCODE_PAGE_DOWN to 78,
-            KeyEvent.KEYCODE_NUM_LOCK to 83,
-
-            KeyEvent.KEYCODE_DPAD_RIGHT to 79,
-            KeyEvent.KEYCODE_DPAD_LEFT to 80,
-            KeyEvent.KEYCODE_DPAD_DOWN to 81,
-            KeyEvent.KEYCODE_DPAD_UP to 82,
-
+            KeyEvent.KEYCODE_MINUS to 35,
+            KeyEvent.KEYCODE_LEFT_BRACKET to 34,
+            KeyEvent.KEYCODE_RIGHT_BRACKET to 45,
+            KeyEvent.KEYCODE_COMMA to 16,
+            KeyEvent.KEYCODE_SEMICOLON to 54,
             // special key for FR MAC keyboard '@', spend a while to figure it out
-            KeyEvent.KEYCODE_AT to 100
+            KeyEvent.KEYCODE_AT to 100,
         )
     }
 }

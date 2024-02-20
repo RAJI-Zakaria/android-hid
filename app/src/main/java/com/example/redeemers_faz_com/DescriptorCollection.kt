@@ -1,4 +1,4 @@
-package com.example.bluetoothsample
+package com.example.redeemers_faz_com
 
 object DescriptorCollection {
 

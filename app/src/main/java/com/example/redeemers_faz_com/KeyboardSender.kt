@@ -1,4 +1,4 @@
-package com.example.bluetoothsample
+package com.example.redeemers_faz_com
 
 /*
     Simplified version of
@@ -47,21 +47,15 @@ open class KeyboardSender(
             Log.e(TAG, "Report wasn't sent")
         }
     }
-
-    // simple key send (for complex code like Ctrl+C+C (emacs compile), this must be modified)
-    // I believe it's good enough for the moment
     @RequiresPermission(value = "android.permission.BLUETOOTH_CONNECT")
     protected open fun customSender(releaseModifiers: Boolean) {
-        // send key with modifiers
         sendKeys()
         if (releaseModifiers.not()) {
             keyboardReport.key1 = 0.toByte()
-            // release only the key
             sendKeys()
         }
         keyboardReport.reset()
-        // release all
         sendKeys()
     }
 
- }
+}

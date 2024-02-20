@@ -21,4 +21,7 @@ interface BoardDAO {
     // Function to retrieve all boards from the database as a Flow
     @Query("SELECT * FROM board")
     fun getAllBoard(): Flow<List<Board>>
+
+    @Query("SELECT MAX(id) FROM board")
+    fun getMaxId(): Int?
 }

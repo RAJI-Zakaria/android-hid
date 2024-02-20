@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 // Entity class representing a key in the database
 @Entity
 data class Key (
-    @PrimaryKey val id: Int, // Primary key for the key entity
+    @PrimaryKey(autoGenerate = true) val id: Int, // Primary key for the key entity
     @ColumnInfo(name = "id_board") val idBoard: Int, // Foreign key referencing the associated board
     val name: String?, // Name of the key (nullable)
     val command: String?, // Command associated with the key (nullable)

@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Board::class, Key::class], version = 1) // Defines the Room database settings with specified entities and version
+@Database(entities = [Board::class, Key::class], version = 3) // Defines the Room database settings with specified entities and version
 abstract class AppDatabase : RoomDatabase() {
     abstract fun boardDao(): BoardDAO // Abstract method to retrieve BoardDAO
     abstract fun keysDao(): KeysDAO // Abstract method to retrieve KeysDAO
@@ -20,7 +20,8 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "app_database"
-                ).allowMainThreadQueries().build() // Builds the Room database instance
+                ).allowMainThreadQueries().fallbackToDestructiveMigration()
+                    .build() // Builds the Room database instance
                 INSTANCE = instance // Sets the INSTANCE variable to the newly created database instance
                 instance
             }
