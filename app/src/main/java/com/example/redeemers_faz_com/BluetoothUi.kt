@@ -121,7 +121,7 @@ fun BluetoothDesk(bluetoothController: BluetoothController) {
     Column( modifier = Modifier.fillMaxWidth().padding(20.dp)) {
 
         Spacer(modifier = Modifier.size(20.dp))
-        Text("Slide Desk", color=Color.White)
+        Text("Slide Desk", color=Color.Black)
         Spacer(modifier = Modifier.size(10.dp))
 
         Row(modifier = Modifier.align(Alignment.CenterHorizontally)) {

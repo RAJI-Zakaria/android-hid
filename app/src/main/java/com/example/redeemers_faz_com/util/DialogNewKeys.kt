@@ -43,6 +43,7 @@ fun DialogNewKeys(
     var optionsIcons = mutableListOf<String>()
     icons.forEach { icon ->
         optionsIcons.add(icon.name)
+        println("icon : ${icon.name}")
     }
     var optionsCommands = mutableListOf<String>()
     KeyboardReport.KeyEventMap.keys.forEach { key ->

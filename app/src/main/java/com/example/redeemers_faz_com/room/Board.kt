@@ -9,3 +9,6 @@ data class Board (
     @PrimaryKey val id: Int, // Primary key for the board entity
     val name: String? // Name of the board (nullable)
 )
+
+
+

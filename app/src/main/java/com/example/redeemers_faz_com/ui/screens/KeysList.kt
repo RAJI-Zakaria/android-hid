@@ -90,7 +90,8 @@ fun KeysList( //TODO : Zak to everybody , we must find why selectedBoardId is no
 
     var openDialogNewKey = remember { mutableStateOf(false) }
     var newKey = remember { mutableIntStateOf(-1) }
-    var allIcons = remember { FeatherIcons.AllIcons }
+    var allIcons = remember { FeatherIcons.AllIcons.take(20) } // to avoid app from crashing i am retrieving only 30 icons
+
 
     fun getIcon(icon : String): ImageVector {
         allIcons.forEach {

@@ -64,7 +64,7 @@ fun BluetoothScreen(
             Spacer(modifier = Modifier.height(1.dp).background(Color.White).padding(top = 5.dp))
 
             // Text composable to display "Bluetooth" text with specified style
-            Text("Bluetooth", fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.White)
+            Text("Bluetooth", fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.Black)
 
             // Spacer composable to add space between elements
             Spacer(modifier = Modifier.height(20.dp))

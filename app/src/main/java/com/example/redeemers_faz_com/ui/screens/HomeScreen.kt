@@ -70,7 +70,7 @@ fun HomeScreen(
                 .background(Color.White)
                 .padding(top = 5.dp))
 
-            Text("Home", fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.White)
+            Text("Home", fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.Black)
 
             Spacer(modifier = Modifier.height(20.dp))
 

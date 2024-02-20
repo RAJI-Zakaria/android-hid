@@ -106,15 +106,11 @@ fun BoardScreen(
                 .padding(top = 5.dp))
 
             // Text composable to display board name with specified style
-            Text(boardName, fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.White)
+            Text("Board ID : $boardName", fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.Black)
 
             // Spacer composable to add space between elements
             Spacer(modifier = Modifier.height(10.dp))
 
-
-
-            // Spacer composable to add space between elements
-            Spacer(modifier = Modifier.height(10.dp))
 
             // Call KeysList composable to display keyboard shortcut cards
             KeysList( database = appDatabase, onPressCard = { shortcut, releaseModifiers -> press(shortcut, releaseModifiers) })
