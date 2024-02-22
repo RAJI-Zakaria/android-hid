@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.redeemers_faz"
+    namespace = "fr.enssat.bluetoothhid.Zakaria_Abir_Ferhat"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.redeemers_faz"
+        applicationId = "fr.enssat.bluetoothhid.Zakaria_Abir_Ferhat"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
