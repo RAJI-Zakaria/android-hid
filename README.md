@@ -5,6 +5,7 @@
 This application helps you organize your shortcuts into decks for quick and easy access.
 Providing you control over your conntected devices through bluetooth.
 
+Note : `Pity, didn't have enough time to add cursor sender to use the phone as a track pad`.
 
 **Installation:**
 
